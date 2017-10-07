@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML&CSS</title>
+    <link rel="stylesheet" href="nm/gaintime/css/gaintime.min.css" media ="screen" title="no title">
+    <link rel="stylesheet" href="stylesheet/htmlcss.css" media ="screen" title="no title">
+  </head>
+  <body>
+    <section id="home" class="orange text-center flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>HTML & CSS</h1>
+          <p>Entendendo como as coisas funcionam!</p>
+        </div>
+      </div>
+    </section>
+    <section id="context">
+
+    </section>
+    <section id="html" class="html-orange title text-center flex-box">
+      <div class="center centerex">
+        <div class="image-block">
+          <img src="images/html5.png" alt="">
+          <p>HyperText Markup Language</p>
+        </div>
+      </div>
+    </section>
+    <section id="html0">
+      <h1 class="text-center">Estrutura básica do arquivo .html</h1>
+      <div class="code-block html">
+        <pre>
+<code><span class="el"><span class="el">&lt</span>!DOCTYPE html<span class="el">&gt</span></span></code>
+<code><span class="el">&lt</span>html<span class="el">&gt</span></code>
+  <code><span class="el">&lt</span>head<span class="el">&gt</span></code>
+    <code><span class="el">&lt</span>meta <span class="attr">charset</span><span class="el">=</span><span class="value">"utf-8"</span><span class="el">&gt</span></code>
+    <code><span class="el">&lt</span>title<span class="el">&gt</span><span class="tx">Minha página</span><span class="el">&lt/</span>title<span class="el">&gt</span></code>
+  <code><span class="el">&lt/</span>head<span class="el">&gt</span></code>
+  <code><span class="el">&lt</span>body<span class="el">&gt</span></code>
+    <code><span class="el">&lt</span>h1<span class="el">&gt</span><span class="tx">Fique focado, e vai vencer no final.</span><span class="el">&lt/</span>h1<span class="el">&gt</span></code>
+  <code><span class="el">&lt/</span>body<span class="el">&gt</span></code>
+<code><span class="el">&lt/</span>html<span class="el">&gt</span></code>
+        </pre>
+      </div>
+    </section>
+    <section id="html1" class="dark">
+      <h1 class="text-center">Categorias básicas</h1>
+      <h2>Elementos de bloco (block)</h2>
+      <p>São elementos que, por padrão, iniciam em uma nova linha.</p>
+      <ul>
+        <li>Parágrafos</li>
+        <li>Formulários</li>
+        <li>Tabelas</li>
+      </ul>
+      <h2>Elementos de linha (inline)</h2>
+      <p>São elementos que, por padrão, não começam em uma nova linha, e ocupam somente a largura de seu conteúdo.</p>
+      <ul>
+        <li>Imagens</li>
+        <li>Âncoras</li>
+        <li>Elementos de formatação</li>
+      </ul>
+    </section>
+    <section id="html2" class="title orange flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Trabalhando com Texto</h1>
+          <p>Afinal, foi pra isso que o HTML foi criado.</p>
+        </div>
+      </div>
+    </section>
+    <section id="html3">
+      <h1 class="text-center">As tags de texto</h1>
+      <p>Os textos em HTML podem ser compostos por cabeçalhos (headers), parágrafos, quebras de linha, listas e tags de ênfase e importância.</p>
+      <div class="flex-box">
+        <div class="col">
+          <h1>Sou um cabeçalho nível 1</h1>
+          <p>Sou um parágrafo. A seguir, uma lista não ordenada:</p>
+          <ul>
+            <li>Bermuda</li>
+            <li>Sandália de couro</li>
+          </ul>
+          <h4>Sou um cabeçalho nível 4</h4>
+          <ol>
+            <li>Cabeçalho</li>
+            <li>Parágrafo, eu...</li>
+          </ol>
+        </div>
+        <div class="code-block html col">
+          <pre>
+<code><span class="el">&lt</span>h1<span class="el">&gt</span><span class="tx">Sou um cabeçalho nível 1</span><span class="el">&lt/</span>h1<span class="el">&gt</span></code>
+<code><span class="el">&lt</span>p<span class="el">&gt</span><span class="tx">Sou um parágrafo. A seguir, uma lista não ordenada:</span><span class="el">&lt/</span>p<span class="el">&gt</span></code>
+<code><span class="el">&lt</span>ul<span class="el">&gt</span></code>
+  <code><span class="el">&lt</span>li<span class="el">&gt</span><span class="tx">Bermuda</span><span class="el">&lt/</span>li<span class="el">&gt</span></code>
+  <code><span class="el">&lt</span>li<span class="el">&gt</span><span class="tx">Sandália de couro</span><span class="el">&lt/</span>li<span class="el">&gt</span></code>
+<code><span class="el">&lt/</span>ul<span class="el">&gt</span></code>
+<code><span class="el">&lt</span>h4<span class="el">&gt</span><span class="tx">Sou um cabeçalho nível 4</span><span class="el">&lt/</span>h4<span class="el">&gt</span></code>
+<code><span class="el">&lt</span>ol<span class="el">&gt</span></code>
+  <code><span class="el">&lt</span>li<span class="el">&gt</span><span class="tx">Cabeçalho</span><span class="el">&lt/</span>li<span class="el">&gt</span></code>
+  <code><span class="el">&lt</span>li<span class="el">&gt</span><span class="tx">Parágrafo, eu...</span><span class="el">&lt/</span>li<span class="el">&gt</span></code>
+<code><span class="el">&lt/</span>ol<span class="el">&gt</span></code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section id="html4">
+      <h1 class="text-center">As tags de ênfase e importância</h1>
+      <p>São utilizadas quando queremos dar ênfase ou importância semântica a um trecho do texto.</p>
+      <div class="flex-box">
+        <div class="col">
+          <p>Normal.</p>
+          <p><em>Com ênfase</em>.</p>
+          <p><strong>Com importância</strong>.</p>
+        </div>
+        <div class="code-block html col">
+          <pre>
+<code><span class="el">&lt</span>p<span class="el">&gt</span><span class="tx">Normal.</span><span class="el">&lt/</span>p<span class="el">&gt</span></code>
+<code><span class="el">&lt</span>p<span class="el">&gt</span><span class="el">&lt</span>em<span class="el">&gt</span><span class="tx">Com ênfase.</span><span class="el">&lt/</span>em<span class="el">&gt</span><span class="el">&lt/</span>p<span class="el">&gt</span></code>
+<code><span class="el">&lt</span>p<span class="el">&gt</span><span class="el">&lt</span>strong<span class="el">&gt</span><span class="tx">Com importância.</span><span class="el">&lt/</span>strong<span class="el">&gt</span><span class="el">&lt/</span>p<span class="el">&gt</span></code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section id="html5" class="title orange flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Abalando as Estruturas</h1>
+          <p>Ora, HTML não é só texto!</p>
+        </div>
+      </div>
+    </section>
+    <section id="html6">
+      <h1 class="text-center">As tags de estrutura</h1>
+      <div class="flex-box">
+        <div class="col">
+          <ul>
+            <li><b>header</b> - representa um grupo de suporte introdutório ou navegacional. </li>
+            <li><b>nav</b> - representa uma seção com links de navegação.</li>
+            <li><b>footer</b> - representa um rodapé.</li>
+            <li><b>section</b> - é um tematizador de conteúdo. Todo o conteúdo dentro de uma section deve tratar do mesmo assunto.</li>
+            <li><b>main</b> - define o conteúdo principal dentro da body.</li>
+            <li><b>div</b> - separador genérico em forma de bloco.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="padding fix-height" style="border: 1px solid #333">
+            <div class="left">
+              <span>Logo?</span>
+            </div>
+            <div class="right" style="border: 1px solid #333">
+              <a href="#">Página 1</a>
+              <a href="#">Página 2</a>
+            </div>
+          </div>
+          <div class="padding" style="border: 1px solid #F56; margin: 10px 0">
+            <h1 class="no-margin" style="font-size: 18px">Conteúdo Principal</h1>
+            <p style="font-size: 12px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="padding" style="border: 1px solid #333; margin: 10px 0">
+            <h1 class="no-margin" style="font-size: 18px">Outro conteúdo</h1>
+            <p style="font-size: 12px">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
+          <div class="padding-lr" style="border: 1px solid #333; margin: 10px 0">
+            <p>© Rodapé 2017</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="html7" class="title orange flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Tabelas</h1>
+          <p>Representando dados em 2 dimensões</p>
+        </div>
+      </div>
+    </section>
+    <section id="html8">
+      <h1 class="text-center">As tags para formar uma tabela</h1>
+      <div class="flex-box">
+        <div class="col">
+          <ul>
+            <li><b>table</b> - cria uma tabela</li>
+            <li><b>tr</b> - adiciona uma linha à tabela</li>
+            <li><b>td</b> - adiciona uma coluna à linha</li>
+            <li><b>thead, tbody, tfoot</b> - separam as linhas de cabeçalho, corpo e rodapé, respectivamente, de uma tabela.</li>
+            <li><b>th</b> - coluna que representa um cabeçalho.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <table class="p-table">
+        <thead>
+          <tr>
+            <th>Fruta</th>
+            <th>Peso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Manga</td>
+            <td>600g</td>
+          </tr>
+          <tr>
+            <td>Melancia</td>
+            <td>2kg</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Soma</th>
+            <td>2,6kg</td>
+          </tr>
+        </tfoot>
+      </table>
+        </div>
+      </div>
+    </section>
+    <section id="html9" class="title orange flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Formulários</h1>
+          <p>Queremos dados dos usuários!</p>
+        </div>
+      </div>
+    </section>
+    <section id="html10">
+      <h1>As tags de formulário</h1>
+      <div class="flex-box">
+        <div class="col">
+          <ul>
+            <li><b>form</b> - cria um formulário</li>
+            <li><b>input</b> - adiciona um campo de texto curto ao form</li>
+            <li><b>textarea</b> - adiciona um campo de texto longo</li>
+            <li><b>select</b> - adiciona um campo de seleção</li>
+            <li><b>label</b> - adiciona um título ao campo</li>
+            <li><b>button</b> - tag para botões</li>
+          </ul>
+        </div>
+        <div class="col">
+          <form class="gt-form" action="index.html" method="post">
+            <label for="">Insira seu nome:</label>
+            <input type="text" name="" value="">
+            <label for="">Descreva-se</label>
+            <textarea name="name" rows="3"></textarea>
+            <label for="">Data de nascimento:</label>
+            <select class="" name="">
+              <option value="">1996</option>
+              <option value="">1997</option>
+              <option value="">1998</option>
+            </select>
+            <button class="btn success" type="submit" name="button">Enviar</button>
+            <button class="btn danger" type="reset" name="button">Resetar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="css" class="css-blue title text-center flex-box">
+      <div class="center centerex">
+        <div class="image-block">
+          <img src="images/css3.png" alt="">
+          <p>Cascade Style Sheets</p>
+        </div>
+      </div>
+    </section>
+    <section id="css0">
+      <h1 class="text-center">Estrutura básica</h1>
+      <div class="code-block css">
+        <pre>
+<code><span class="key">seletor</span> {</code>
+  <code>propriedade: <span class="attr">valor</span>;</code>
+  <code>propriedade: <span class="attr">valor</span>;</code>
+<code>
+}
+</code>
+</pre>
+      </div>
+      <ul>
+        <li><b>Seletor</b> - tag html, class, id (<a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Lista completa</a>)</li>
+        <li><b>Propriedade</b> - o que deseja modificar</li>
+        <li><b>Valor</b> - modificação</li>
+      </ul>
+    </section>
+    <section id="css1" class="blue title text-center flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Unidades</h1>
+          <p>Em CSS temos várias unidades de medida: px, pt, em, rem, %, entre outras.</p>
+        </div>
+      </div>
+    </section>
+    <section id="css2" class="title text-center flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Tamanho</h1>
+          <p>Em CSS utilizamos as propriedades <code>width</code> e <code>height</code> para definir largura e altura.</p>
+        </div>
+      </div>
+    </section>
+    <section id="css3" class="blue title text-center flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Seu documento é uma caixa!</h1>
+          <p>Em CSS temos várias unidades de medida: px, pt, em, rem, %, entre outras.</p>
+        </div>
+      </div>
+    </section>
+    <section id="css4">
+      <div class="">
+        <ul>
+          <li><b>padding:</b> 10px 10px 10px 10px;
+            <ul>
+              <li>padding-top: 10px</li>
+              <li>padding-right: 10px</li>
+              <li>padding-bottom: 10px</li>
+              <li>padding-left: 10px</li>
+            </ul>
+          </li>
+          <li><b>margin:</b> 5px 10px
+            <ul>
+              <li>margin-top & margin-bottom: 5px</li>
+              <li>margin-right & margin-left: 10px</li>
+            </ul>
+          </li>
+          <li><b>margin:</b> 5px 7px 10px
+            <ul>
+              <li>margin-top: 5px</li>
+              <li>margin-right & margin-left: 7px</li>
+              <li>margin-bottom: 10px</li>
+            </ul>
+          </li>
+          <li><b>border:</b> 1px solid #333
+            <ul>
+              <li>border-width: 1px;</li>
+              <li>border-style: solid;</li>
+              <li>border-color: #333;</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="css5" class="title blue flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Position</h1>
+          <p>A propriedade position especifica o tipo de posicionamento de um elemento.</p>
+          <a class="btn white" target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_position">Vamos ver</a>
+        </div>
+      </div>
+    </section>
+    <section id="css6" class="title flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>Display</h1>
+          <p>A propriedade display especifica o tipo de caixa de um elemento html.</p>
+          <a class="btn dark" target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=inline">Vamos ver</a>
+        </div>
+      </div>
+    </section>
+    <section id="css7" class="blue title flex-box">
+      <div class="center centerex">
+        <div class="">
+          <h1>E...</h1>
+          <ul class="text-left">
+            <li><b>Cores</b>: São comumente representadas em hexadecimal, rgb ou rgba.</li>
+            <li><b>Backgrounds</b>: Podem conter cores ou imagens.
+              <ul>
+                <li>background-color: #F00000</li>
+                <li>background-image: url(https://infojrufba.github.io/guias/html/assets/img/html5.png)</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="end">
+      <h1>Referências</h1>
+      <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/CSS</a></li>
+        <li><a href="https://www.w3schools.com/cssref/" target="_blank">https://www.w3schools.com/cssref/</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">https://www.w3schools.com/html/default.asp</a></li>
+      </ul>
+      <h2>Links Legais:</h2>
+      <ul>
+        <li><a href="https://infojrufba.github.io/guias/html/">https://infojrufba.github.io/guias/html/</a></li>
+        <li><a href="http://infojrufba.github.io/treinamentos/html_css_externa_2017.1/">http://infojrufba.github.io/treinamentos/html_css_externa_2017.1</a></li>
+        <li><a href="https://infojrufba.github.io/basic-website/">https://infojrufba.github.io/basic-website/</a></li>
+        <li><a href="https://gaintime.github.io">https://gaintime.github.io</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+      </ul>
+    </section>
+    <footer id="by" class="white">
+      <p>Por: <a href="https://github.com/jprodrigues70">JP Rodrigues</a>, desenvolvedor web e mobile, criador do app <a href="https://meforma.github.io">MeForma</a>, e do framework <a href="https://gaintime.github.io">GainTime</a>.</p>
+    </footer>
+    <script type="text/javascript" src="nm/gaintime/js/gaintime.min.js"></script>
+    <script type="text/javascript">
+      var slides = [
+        'home',
+        'context',
+        'html',
+        'html0', 'html1', 'html2', 'html3', 'html4', 'html5', 'html6', 'html7', 'html8', 'html9', 'html10',
+        'css', 'css0', 'css1', 'css2', 'css3', 'css4', 'css5', 'css6', 'css7', 'end', 'by'
+      ]
+      var count = 0;
+
+      document.addEventListener("click", function(t) {
+        if (t.target.tagName == "A" || t.target.tagName == "a") return false;
+        window.oncontextmenu = function() {
+          return false;
+        }
+        roll(t);
+      })
+
+      document.addEventListener("keypress", function(t) {
+        if (t.key >= 0 && t.key <= 9) roll(t, t.key);
+      })
+
+      function roll(t, counter = -1) {
+        if (count <= slides.length && count >= 0) count = (t.which == 3) ? count - 1 : count + 1;
+        if (count == -1) count = slides.length - 1;
+        if (count > slides.length - 1) count = 0;
+        if (counter != -1) count = counter;
+        if (f = slides[count], void 0 != f) {
+          t.preventDefault();
+          var r = document.scrollingElement || document.documentElement,
+          s = document.getElementById(f).offsetTop;
+          smoothScroll(r, s, 600)
+        }
+      }
+    </script>
+  </body>
+</html>

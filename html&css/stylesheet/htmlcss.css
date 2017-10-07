@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/AnonymousPro-Regular.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  overflow: hidden;
+  font-size: 18px;
+}
+
+section {
+  height: 100%;
+  padding: 50px 8%;
+}
+
+#home, .title {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+#home h1, .title h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+#home p, .title p {
+  font-size: 30px;
+}
+
+.blue {
+  background-color: #379ad6;
+  color: #FFF;
+}
+
+.orange {
+  background-color: #ff5c5c;
+  color: #FFF;
+}
+
+.html-orange {
+  background-color: #E44D26;
+  border-color: #E44D26;
+  color: #FFF;
+}
+
+.css-blue {
+  background-color: #1758a7;
+  color: #FFF;
+}
+
+.image-block img {
+  max-width: 300px;
+}
+
+.p-table {
+  width: 100%;
+}
+.p-table, .p-table th, .p-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.p-table th, .p-table td {
+    padding: 5px;
+}
