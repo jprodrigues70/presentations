@@ -16,16 +16,16 @@ section {
   padding: 50px 8%;
 }
 
-#home, .title {
+#slide-home, .title {
   font-family: 'Anonymous Pro', monospace;
 }
 
-#home h1, .title h1 {
+#slide-home h1, .title h1 {
   font-size: 80px;
   margin: 0;
 }
 
-#home p, .title p {
+#slide-home p, .title p {
   font-size: 30px;
 }
 
@@ -63,4 +63,10 @@ section {
 }
 .p-table th, .p-table td {
     padding: 5px;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
 }
