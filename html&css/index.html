@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML&CSS</title>
-    <link rel="stylesheet" href="nm/gaintime/css/gaintime.min.css" media ="screen, print" title="no title">
+    <link rel="stylesheet" href="../nm/gaintime/css/gaintime.min.css" media ="screen, print" title="no title">
     <link rel="stylesheet" href="stylesheet/htmlcss.css" media ="screen, print" title="no title">
   </head>
   <body>
@@ -382,47 +382,35 @@
       </ul>
       <h2>Links Legais:</h2>
       <ul>
-        <li><a href="https://infojrufba.github.io/guias/html/">https://infojrufba.github.io/guias/html/</a></li>
-        <li><a href="http://infojrufba.github.io/treinamentos/html_css_externa_2017.1/">http://infojrufba.github.io/treinamentos/html_css_externa_2017.1</a></li>
-        <li><a href="https://infojrufba.github.io/basic-website/">https://infojrufba.github.io/basic-website/</a></li>
-        <li><a href="https://gaintime.github.io">https://gaintime.github.io</a></li>
-        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+        <li><a href="https://infojrufba.github.io/guias/html/">Guia de estudos da InfoJr UFBA para HTML</a></li>
+        <li><a href="http://infojrufba.github.io/treinamentos/html_css_externa_2017.1/">Slides da InfoJr UFBA sobre HTML e CSS</a></li>
+        <li><a href="https://infojrufba.github.io/basic-website/">Website básico construído na nossa capacitação</a></li>
+        <li><a href="https://gaintime.github.io">Framework de CSS criado por mim ;)</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guia de Flexbox da CSS tricks</a></li>
       </ul>
     </section>
-    <footer id="by" class="white">
-      <p>Por: <a href="https://github.com/jprodrigues70">JP Rodrigues</a>, desenvolvedor web e mobile, criador do app <a href="https://meforma.github.io">MeForma</a>, e do framework <a href="https://gaintime.github.io">GainTime</a>.</p>
+    <footer id="slide-by" class="white profile text-center">
+      <img src="../images/jp.jpg" alt="Fotografia de JP Rodrigues.">
+      <h1>JP Rodrigues</h1>
+      <p class="medium center">Desenvolvedor web e mobile, criador do app <a href="https://meforma.github.io">MeForma</a>, e do framework <a href="https://gaintime.github.io">GainTime</a>.</p>
+      <p>"Cansado de só os ternos serem pretos em lugares chiques."</p>
+      <ul class="text-left small center">
+        <li>
+          Github: <a href="https://github.com/jprodrigues70">@jprodrigues70</a>
+        </li>
+        <li>
+          Linkedin: <a href="https://www.linkedin.com/in/jprodrigues70/">@jprodrigues70</a>
+        </li>
+        <li>
+          Facebook: <a href="https://fb.com/jprodrigues70">@jprodrigues70</a>
+        </li>
+      </ul>
+      <p>
+      </p>
     </footer>
-    <script type="text/javascript" src="nm/gaintime/js/gaintime.min.js"></script>
+    <script type="text/javascript" src="../js/gaintime-slider.js"></script>
     <script type="text/javascript">
-      var slidesEl = document.querySelectorAll('*[id^="slide"]'), slides = [], count = 0, nopass = ["A","INPUT","SELECT","OPTION","TEXTAREA","BUTTON","LABEL"];
-
-      slidesEl.forEach(function(x) {
-        slides.push(x.id)
-      });
-
-      document.addEventListener("click", function(n){
-        return (-1 != nopass.indexOf(n.target.tagName.toUpperCase()) || 3 == n.which) ? !1 : (void roll(n))
-      });
-      document.addEventListener('contextmenu', function(n) {
-        return (-1 != nopass.indexOf(n.target.tagName.toUpperCase())) ? !1 : (void roll(n))
-      })
-      document.addEventListener("keypress", function(e){
-        e.key >= 0 && e.key <= 9 && roll(e, e.key)
-      });
-
-      function roll(t, counter = -1) {
-        count <= slides.length && count >=0 && (count = (3 == t.which)? count - 1: count + 1),
-        -1 == count && (count = slides.length-1),
-        count > slides.length-1 && (count=0);
-        -1 != counter && (count = parseInt(counter));
-
-        if (f = slides[count], void 0 != f) {
-          t.preventDefault();
-          var r = document.scrollingElement || document.documentElement,
-          s = document.getElementById(f).offsetTop;
-          smoothScroll(r, s, 600)
-        }
-      }
+      gtSlides();
     </script>
   </body>
 </html>
