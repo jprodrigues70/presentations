@@ -9,20 +9,37 @@
     <link rel="stylesheet" href="stylesheet/htmlcss.css" media ="screen, print" title="no title">
   </head>
   <body>
-    <section id="slide-home" class="css-blue text-center flex-box">
+    <section id="slide-home" class="fb-blue text-center flex-box">
       <div class="center centerex">
         <div>
           <h1>Acessibilidade WEB</h1>
           <p>Sua avó não navega bem, e a culpa pode ser sua!</p>
+          <div class="line white medium center"></div>
         </div>
       </div>
     </section>
-    <section id="slide-context">
-
+    <section id="slide-context" class="flex-box">
+      <div class="row centerex center">
+        <div class="xs-12 sm-6 text-left">
+          <h1>Tá, quem é você? Qual a sua participação?</h1>
+          <h3>Você contribui para uma web mais acessível?</h2>
+          <ul>
+            <li>Dona de empresa de tecnologia</li>
+            <li>Desenvolvedora web</li>
+            <li>Gerente de projetos</li>
+            <li>Engenheira de software</li>
+            <li>Scrum master</li>
+            <li>[Outro]</li>
+          </ul>
+        </div>
+        <div class="xs-12 sm-6">
+          <img class="xs-12" src="images/pigs.png" alt="Os três porquinhos representando SM, TM e PO">
+        </div>
+      </div>
     </section>
     <section id="slide-web" class="title flex-box blue">
       <div class="center centerex">
-        <div>
+        <div class="padding">
           <h1>O que é WEB?</h1>
           <p>Compartilhar; informação; documentos</p>
         </div>
@@ -31,41 +48,376 @@
     <section id="slide-accessibility" class="title flex-box">
       <div class="center centerex">
         <div>
-          <h1>O que é acessibilidade?</h1>
+          <h1>E acessibilidade?</h1>
           <p>"[...] igualdade de oportunidades, com segurança e autonomia [...]"</p>
+          <img src="images/wa11y-icon.png" alt="" class="xs-1 off-xs-5">
         </div>
       </div>
     </section>
-    <section id="slide-web-accessibility" class="title flex-box dark">
+    <section id="slide-web-accessibility" class="title flex-box green">
       <div class="center centerex">
         <div>
-          <h1>Compilando...</h1>
-          <p>Acessibilidade na web significa que qualquer pessoa pode usar a web.</p>
+          <h1>O que é um website acessível?</h1>
+          <p>É um website que permite a qualquer pessoa navegar, entender, perceber e interagir com o conteúdo de forma eficaz ao utilizá-lo.</p>
         </div>
       </div>
     </section>
-    <footer id="slide-by" class="white profile text-center">
-      <img src="../images/jp.jpg" alt="Fotografia de JP Rodrigues.">
-      <h1>JP Rodrigues</h1>
-      <p class="medium center">Desenvolvedor web e mobile, criador do app <a href="https://meforma.github.io">MeForma</a>, e do framework <a href="https://gaintime.github.io">GainTime</a>.</p>
-      <p>"Cansado de só os ternos serem pretos em lugares chiques."</p>
-      <ul class="text-left small center">
-        <li>
-          Github: <a href="https://github.com/jprodrigues70">@jprodrigues70</a>
-        </li>
-        <li>
-          Linkedin: <a href="https://www.linkedin.com/in/jprodrigues70/">@jprodrigues70</a>
-        </li>
-        <li>
-          Facebook: <a href="https://fb.com/jprodrigues70">@jprodrigues70</a>
-        </li>
-      </ul>
-      <p>
-      </p>
+    <section id="slide-data" class="flex-box">
+      <div class="center centerex">
+        <div class="xs-12 sm-6 text-left">
+          <h1>Precisamos mesmo dar atenção a isso?</h1>
+          <small>OMS, Outubro de 2017</small>
+          <ul>
+            <li>Cerca de 253 milhões de pessoas vivem com deficiência visual;</li>
+            <li>36 milhões são cegas;</li>
+            <li>217 milhões têm comprometimento da visão de moderado a grave;</li>
+            <li>81% das pessoas que são cegas ou apresentam comprometimento da visão têm idade >= 50 anos</li>
+            <li>Estima-se que 19 milhões de crianças tenham problemas de visão</li>
+            <li>Cerca de 1,4 milhão de crianças têm cegueira irreversível</li>
+            <li>200 milhões de pessoas com baixa visão não têm acesso a óculos ou outros dispositivos de baixa visão (Maio de 2016)</li>
+          </ul>
+        </div>
+
+        <div class="xs-12 sm-6">
+          <img src="images/gp.png" alt="Desenho de um casal de idosos de óculos e roupas de frio.">
+        </div>
+      </div>
+    </section>
+    <section id="slide-checklist" class="flex-box">
+      <div class="center centerex">
+        <div class="xs-6 text-left">
+          <h1>O que a gente precisa saber?</h1>
+          <ul>
+            <li>Escrever HTML</li>
+            <li>Semântica das tags</li>
+            <li>Entender sobre os ARIA attributes</li>
+            <li>Organizar o conteúdo</li>
+            <li>Um pouco sobre cores</li>
+            <li>Que ninguém é obrigado a adivinhar as interações do seu site!</li>
+          </ul>
+        </div>
+        <div class="xs-6">
+          <img src="images/html.png" alt="" class="xs-10">
+        </div>
+      </div>
+    </section>
+    <section id="slide-write" class="flex-box">
+      <div class="center centerex">
+        <div class="">
+
+        <h1 class="text-center">Erros comuns de HTML</h1>
+        <a class="text-center center" href="https://www.w3.org/TR/WCAG20-TECHS/failures.html#F42" target="_blank">Muitos outros erros comuns</a>
+        <div class="row">
+          <div class="xs-6 text-left">
+            <div class="code-block html">
+              <pre>
+<ul>
+  <a href="#home"><li>Início</li></a>
+</ul>
+<p><a href="#team">Team</p></a>
+<section>
+  <p>Lorem Ipsum</p>
+  <img src="imgs/mouse.png">
+</section>
+<form action="index.html" method="post">
+  <label for="">Nome</label>
+  <input id="name" name="name" placeholder="Nome">
+</form>
+              </pre>
+            </div>
+          </div>
+          <div class="xs-6 text-left">
+            <div class="code-block html">
+              <pre>
+<ul>
+  <li><a href="#home">Início</a></li>
+</ul>
+<p><a href="#team">Team</a></p>
+<section>
+  <h1>Lorem Ipsum</h1>
+  <img alt="Rato branco sorrindo" src="imgs/mouse.png">
+</section>
+<form action="index.html" method="post">
+  <label for="name">Nome</label>
+  <input id="name" name="name" placeholder="Ex: Maria Clara">
+</form>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="slide-validator" class="blue flex-box">
+        <div class="row centerex center">
+          <div class="xs-12 sm-6 text-left">
+            <h1>Como escrever um bom HTML?</h1>
+            <ul>
+              <li>Valide sempre seu HTML.</li>
+              <li>Em caso de dúvida, vá na documentação.</li>
+              <li>Cuidado ao copiar elementos de tutoriais na internet.</li>
+              <li>Evite copiar código do site alheio.</li>
+              <li>Estude as regras semânticas das tags.</li>
+            </ul>
+          </div>
+          <div class="xs-12 sm-6">
+            <img src="images/W3C.svg" alt="logo da W3C" class="off-xs-1 xs-10">
+          </div>
+        </div>
+    </section>
+    <section id="slide-semantic" class="flex-box">
+        <div class="row centerex center">
+          <div class="xs-12 sm-8 text-left">
+            <h1>A semântica é importantíssima para a acessibilidade!</h1>
+            <ul>
+              <li><b>placeholder e label</b> - ...</li>
+              <li><b>h1, h2, h3, h4, h5, h6</b> - Isso serve apenas para indicar título</li>
+              <li><b>header</b> - Isso serve apenas para indicar cabeçalho</li>
+              <li><b>section</b> - É um tematizador de conteúdo. Todo o conteúdo dentro de uma section deve tratar do mesmo assunto. Ex: Capítulo, seções numeradas de uma tese.</li>
+              <li><b>article</b> - Deve ser utilizada para conteúdo independente. Ex: Forum Post, artigo de jornal ou revista, comentário de usuário.</li>
+              <li><b>figure</b> - Representa algum conteúdo de fluxo, que é autônomo e tipicamente referenciado como uma única unidade. Pode ter uma legenda, tipicamente o elemento <code>&ltfigcaption&gt</code>.</li>
+              <li><b>main</b> - Apenas para o conteúdo principal da página</li>
+              <li><b>strong x b || em x i</b> - <em>strong</em> e <em>em</em> tem valor semântico, <em>i</em> e <em>b</em> não.</li>
+              <li>autofocus, autocomplete, required</li>
+            </ul>
+          </div>
+          <div class="xs-12 sm-4">
+            <img src="images/HTML.jpg" alt="Boneco ensinando HTML" class="off-xs-1 xs-11">
+          </div>
+        </div>
+    </section>
+    <section id="slide-tips" class="blue flex-box">
+          <div class="centerex center">
+            <div class="row white">
+              <h1>Mas não é só escrever certo</h1>
+              <div class="xs-6 text-left" style="padding: 15px; border-radius: 3px">
+                <ul>
+                  <li>Coloque o texto alternativo (alt attribute) em imagens relevantes</li>
+                  <li>Não utilize maximum-scale=1.0</li>
+                  <li>Cuidado com uso do atributo title <code>&ltdiv title="Test"&gt&lt/div&gt</code>. <a href="https://www.w3.org/TR/html/dom.html#the-title-attribute">O HTML5 desencoraja o uso</a>. <a href="https://www.w3.org/TR/WCAG20-TECHS/H65.html">Veja boas práticas</a></li>
+                  <li>Determine a linguagem do seu texto <code>&lthtml lang="en"&gt</code></li>
+                  <li>Certifique-se de que os links tem um destaque</li>
+                  <li>Certifique-se de que os links tem um estado <code>:focus</code></li>
+                  <li>Tenha um link de "Saltar para o conteúdo principal"</li>
+                </ul>
+              </div>
+              <div class="xs-6 text-left">
+                <ul>
+                  <li>Não utilize inline-script</li>
+                  <li>Certifique-se de que o seu formulário tem uma ordem lógica</li>
+                  <li>Associe a cada form control uma label</li>
+                  <li>Realize testes de acessibilidade para leitura, contraste, keyboard only</li>
+                  <li>Verifique se seu site cumpre as diretrizes do WCAG 2.0</li>
+                  <li>Se possível, adicione um painel de ferramentas</li>
+                  <li>Tome muito cuidado ao esconder conteúdo</li>
+                  <li>Você conhece as ARIA landmarks?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="slide-aria" class="flex-box">
+        <div class="centerex center">
+            <div class="row">
+              <h1>ARIA</h1>
+              <div class="xs-12 text-left">
+                  <ul class="xs-12 sm-6 text-left">
+                    <li>
+                      <code>
+                        &ltheader role="banner"&gt
+                      </code>
+                      <p>
+                        Região da página que diz o foco do site, geralmente seu cabeçalho global.
+                      </p>
+                    </li>
+                    <li>
+                      <code>
+                        &ltnav role="navigation"&gt
+                      </code>
+                      <p>
+                        Contém links de navegação.
+                      </p>
+                    </li>
+                    <li>
+                      <code>
+                        &ltmain role="main"&gt
+                      </code>
+                      <p>
+                        Conteúdo principal. Um por página.
+                      </p>
+                    </li>
+                    <li>
+                      <code>
+                        &ltarticle role="article"&gt
+                      </code>
+                      <p>
+                        Conteúdo independete. Utilize apenas uma vez, no elemento desse tipo mais externo.
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="xs-12 sm-6 text-left">
+                    <li>
+                      <code>
+                        &ltaside role="complementary"&gt
+                      </code>
+                      <p>
+                        Oferece suporte ao conteúdo principa, mesmo se separada.
+                      </p>
+                    </li>
+                    <li>
+                      <code>
+                        &ltfooter role="contentinfo"&gt
+                      </code>
+                      <p>
+                        Contém informações sobre o documento (copyright, informações da empresa, etc).
+                      </p>
+                    </li>
+                    <li>
+                      <code>
+                        &ltform role="search"&gt
+                      </code>
+                      <p>
+                        Adiciona uma função search à sua pesquisa principal.
+                      </p>
+                    </li>
+                    <li>
+                      <code>&ltimg src="lalala" aria-hidden="true"&gt</code>
+                      <p>Esconde elementos para leitores de tela.</p>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="slide-tools" class="flex-box">
+        <div class="row centerex center">
+          <div class="xs-12 sm-6 text-left">
+            <h1>Ferramentas úteis</h1>
+            <ul>
+              <li>Fangs Screen Reader Emulator - <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/fangs-screen-reader-emulator/">Plugin do Firefox</a></li>
+              <li>WAVE - Wab Accessibility Evaluation Tool - <a target="_blank" href="http://wave.webaim.org/">Página</a>; <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/">Plugin do Firefox</a></li>
+              <li>AXE - the accessibility engine - <a target="_blank" href="http://bitly.com/aXe-Chrome">Chrome</a>; <a target="_blank" href="http://bit.ly/aXe-Firefox">Firefox</a></li>
+              <li>I want to see like the color blind - <a target="_blank" href="https://chrome.google.com/webstore/detail/i-want-to-see-like-the-co/jebeedfnielkcjlcokhiobodkjjpbjia">Plugin do Chrome</a></li>
+              <li>Evaluera A-Tester - <a target="_blank" href="http://www.evaluera.co.uk/atester">Página</a></li>
+              <li>WCAG-EM Report Generator - <a target="_blank" href="https://www.w3.org/WAI/eval/report-tool/#/">Página</a></li>
+              <li>Snook Colour Contrast Check - <a href="https://snook.ca/technical/colour_contrast/colour.html" target="_blank">Página</a></li>
+              <li>Leaverou Contrast Ratio - <a href="http://leaverou.github.io/contrast-ratio/" target="_blank">Página</a>
+              </li>
+            </ul>
+            <h2>Dicas de teste</h2>
+            <ul>
+              <li>Navegue utilizando apenas o teclado</li>
+              <li>Ative o leitor de tela do seu computador e navegue escutando-o</li>
+            </ul>
+          </div>
+          <div class="xs-12 sm-6">
+            <img src="images/tools.png" alt="Ícone de Ferramentas" class="off-xs-3 xs-8">
+          </div>
+        </div>
+    </section>
+    <section id="slide-refer" class="flex-box">
+        <div class="row centerex center">
+          <div class="xs-12 sm-6 text-left">
+            <h1>Referências</h1>
+            <ul>
+              <li><a href="http://www.who.int/mediacentre/factsheets/fs282/en/" target="_blank">Organização Mundial da Saúde - Dados sobre problemas de visão,</a></li>
+              <li><a href="http://www.who.int/mediacentre/factsheets/assistive-technology/en/" target="_blank">OMS - Tecnologias assistivas</a></li>
+              <li><a href="https://www.w3.org/TR/WCAG20-TECHS/failures.html#F42" target="_blank">W3C - Erros comuns de HTML</a></li>
+              <li><a href="https://www.w3.org" target="_blank">W3C</a></li>
+              <li><a href="http://a11yproject.com" target="_blank">Accessibility Project</a></li>
+              <li><a href="https://davidwalsh.name/html5-hidden" target="_blank">Escondendo conteúdo em HTML5</a></li>
+            </ul>
+            <h2>Leitores de Tela</h2>
+            <ul>
+              <li><a href="http://www.freedomscientific.com/fs_products/software_jaws.asp">
+              <span xml:lang="en" lang="en">Jaws for Windows - Software</span> comercial.</a></li>
+              <li><a href="http://www.virtualvision.com.br">
+              <span xml:lang="en" lang="en">Virtual Vision - software</span> comercial
+               - Windows.</a></li>
+              <li><a href="http://www.nvda-project.org">
+              NVDA - <span xml:lang="en" lang="en">software</span>  livre e
+               aberto para plataforma Windows.</a></li>
+              <li><a href="http://www.gwmicro.com">
+              <span xml:lang="en" lang="en">Window-Eyes - Software</span> comercial
+               para Windows.</a></li>
+              <li><a href="http://intervox.nce.ufrj.br/~hpdosvox/download.htm">
+              Dosvox - Sistema de programas livre e aberto: navegador Webvox</a></li>
+              <li><a href="http://www.ubuntubrasil.org">
+              Orca - <span xml:lang="en" lang="en">software</span>
+               livre e aberto - Distribuição Ubuntu para Linux.</a></li>
+              </ul>
+          </div>
+        </div>
+    </section>
+    <section id="slide-x"  class="flex-box">
+        <div class="centerex center row">
+          <div class="text-left xs-12 sm-6">
+            <h1>Pare de usar o X no lugar das vogais!</h1>
+            <ul>
+              <li>Os leitores de tela não reconhecem o x;</li>
+              <li>O X não torna as coisas mais fáceis de entender;</li>
+              <li>O X não é pronunciável;</li>
+              <li>O X não transformará a linguagem.</li>
+              <li>Substituir as vogais que indicam gênero por caracteres não pronunciáveis não faz sentido!</li>
+            </ul>
+          </div>
+          <div class="xs-12 sm-6">
+            <img src="images/wa11y-icon.png" alt="Logo da a11yproject" class="off-xs-2 xs-7">
+          </div>
+        </div>
+    </section>
+    <footer id="slide-by" class="white profile text-center flex-box">
+      <div class="center centerex">
+        <div class="">
+          <img src="../images/jp.jpg" alt="Fotografia de JP Rodrigues.">
+          <h1>JP Rodrigues</h1>
+          <p class="medium center">Desenvolvedor web e mobile, criador do app <a href="https://meforma.github.io">MeForma</a>, e do framework <a href="https://gaintime.github.io">GainTime</a>.</p>
+          <p>"Cansado de só os ternos serem pretos em lugares chiques."</p>
+          <ul class="text-left small center">
+            <li>
+              Github: <a href="https://github.com/jprodrigues70">@jprodrigues70</a>
+            </li>
+            <li>
+              Linkedin: <a href="https://www.linkedin.com/in/jprodrigues70/">@jprodrigues70</a>
+            </li>
+            <li>
+              Facebook: <a href="https://fb.com/jprodrigues70">@jprodrigues70</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </footer>
     <script type="text/javascript" src="../js/gaintime-slider.js"></script>
     <script type="text/javascript">
       gtSlides();
+    </script>
+    <script type="text/javascript">
+    var cbs = [].slice.call(document.getElementsByClassName('code-block'));
+    cbs.forEach(function(cb) {
+      [].slice.call(cb.querySelectorAll('pre')).forEach(function(pre) {
+      pre.innerHTML = pre.innerHTML
+      .replace(/="/g, '&#}')
+      .replace(/"/g, '}#&')
+      .replace(/<\//g, '<Ç#}&')
+      .replace(/</g, '&lt').replace(/>/g, '&gt')
+      .replace(/class/g, '<span class="attr">class</span>')
+      .replace(/id/g, '<span class="attr" style="color: #6464d2">id</span>')
+      .replace(/alt/g, '<span class="attr">alt</span>')
+      .replace(/href/g, '<span class="attr">href</span>')
+      .replace(/action/g, '<span class="attr">action</span>')
+      .replace(/name&#}/g, '<span class="attr">name</span>&#}')
+      .replace(/value/g, '<span class="attr">value</span>')
+      .replace(/src/g, '<span class="attr">src</span>')
+      .replace(/onclick/g, '<span class="attr">onclick</span>')
+      .replace(/type/g, '<span class="attr">type</span>')
+      .replace(/placeholder/g, '<span class="attr">placeholder</span>')
+      .replace(/&gt/g, '<span class="el">&gt</span><span class="tx">')
+      .replace(/&lt/g, '</span><span class="el">&lt</span>')
+      .replace(/&#}/g, '<span class="el">=</span><span class="value">"')
+      .replace(/}#&/g, '"</span>')
+      .replace(/Ç#}&/g, '<span class="el">/</span>')
+      })
+    })
     </script>
   </body>
 </html>
