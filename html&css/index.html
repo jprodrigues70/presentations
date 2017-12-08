@@ -185,33 +185,36 @@
             <li><b>td</b> - adiciona uma coluna à linha</li>
             <li><b>thead, tbody, tfoot</b> - separam as linhas de cabeçalho, corpo e rodapé, respectivamente, de uma tabela.</li>
             <li><b>th</b> - coluna que representa um cabeçalho.</li>
+            <li><b>caption</b> - título da tabela</li>
+            <li><b>scope (col ou row)</b> - identificador</li>
           </ul>
         </div>
         <div class="col">
           <table class="p-table">
-        <thead>
-          <tr>
-            <th>Fruta</th>
-            <th>Peso</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Manga</td>
-            <td>600g</td>
-          </tr>
-          <tr>
-            <td>Melancia</td>
-            <td>2kg</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th>Soma</th>
-            <td>2,6kg</td>
-          </tr>
-        </tfoot>
-      </table>
+            <caption>Frutas do dia</caption>
+            <thead>
+              <tr>
+                <th scope="col">Fruta</th>
+                <th scope="col">Peso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Manga</td>
+                <td>600g</td>
+              </tr>
+              <tr>
+                <td>Melancia</td>
+                <td>2kg</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Soma</th>
+                <td>2,6kg</td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </div>
     </section>
